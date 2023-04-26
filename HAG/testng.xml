@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+<run>
+
+<include name="smoke"></include>
+
+</run>
+</groups>
+	<listeners>
+		<listener class-name="com.hag.utils.Listener" />
+
+	</listeners>
+
+	<test thread-count="5" name="Test">
+		<parameter name="browsername" value="chrome" />
+		<classes>
+			<class name="com.hag.tests.Scenario_1" />
+			<class name="com.hag.tests.Scenarios_2" />
+			<class name="com.hag.tests.Scenario_3" />
+			<class name="com.hag.tests.Scenario_4" />
+			<class name="com.hag.tests.Scenario_5" />
+
+
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->
