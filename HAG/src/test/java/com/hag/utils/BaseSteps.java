@@ -101,7 +101,7 @@ public class BaseSteps {
 
 	@AfterMethod(alwaysRun = true)
 	public void closeTheBrowser() {
-		//driver.quit();
+		driver.quit();
 		Reporter.log("browser close successfully");
 //
 	}
